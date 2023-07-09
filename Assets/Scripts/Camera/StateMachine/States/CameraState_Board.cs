@@ -8,8 +8,6 @@ public class CameraState_Board : CameraBaseState
 
     public override void StateEnter()
     {
-        Debug.Log("Board");
-
         _ctx.Fov.Toggle(false);
 
         _ctx.FollowMove.Move(new Vector3(0, 3.94f, -2.3f), 2);

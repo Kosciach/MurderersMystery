@@ -1,4 +1,5 @@
 using SimpleMan.CoroutineExtensions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,7 @@ public class FaderController : MonoBehaviour
 
 
 
-    public void OnChoiceFade()
+    public void OnChoiceFade(Action toDo)
     {
         if (!_canFade) return;
 
@@ -35,7 +36,7 @@ public class FaderController : MonoBehaviour
         _canvasGroupController.ToggleVisibility(true, 1, true);
         this.Delay(1.5f, () =>
         {
-            Debug.Log("Do smth");
+            toDo.Invoke();
 
             _canvasGroupController.ToggleVisibility(false, 1, true);
             this.Delay(1, () =>

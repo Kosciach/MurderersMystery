@@ -8,8 +8,6 @@ public class CameraState_Menu : CameraBaseState
 
     public override void StateEnter()
     {
-        Debug.Log("Menu");
-
         _ctx.Fov.Toggle(false);
 
         SetToggles(true);
@@ -34,8 +32,10 @@ public class CameraState_Menu : CameraBaseState
 
         //Interactable
         _ctx.CanvasGroups.Choices.ToggleInteractable(!mainToggle);
+        _ctx.CanvasGroups.MainMenu.ToggleInteractable(mainToggle);
 
         //BlocksRaycasts
         _ctx.CanvasGroups.Choices.ToggleBlocksRaycasts(!mainToggle);
+        _ctx.CanvasGroups.MainMenu.ToggleBlocksRaycasts(mainToggle);
     }
 }

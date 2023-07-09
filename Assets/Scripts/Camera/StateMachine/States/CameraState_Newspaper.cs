@@ -8,8 +8,6 @@ public class CameraState_Newspaper : CameraBaseState
 
     public override void StateEnter()
     {
-        Debug.Log("Newspaper");
-
         _ctx.Fov.Toggle(true);
 
         _ctx.FollowMove.Move(new Vector3(0, 3.74f, 1.27f), 2);

@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarratorBaseState : MonoBehaviour
+public abstract class NarratorBaseState : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected NarratorStateMachine _ctx;
+
+    public NarratorBaseState(NarratorStateMachine ctx)
     {
-        
+        _ctx = ctx;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+    public abstract void StateEnter();
+    public abstract void StateExit();
+
+
+
+    public abstract void ChoiceA();
+    public abstract void ChoiceB();
+    public abstract void ChoiceC();
+
 }
