@@ -22,3 +22,8 @@ In MurderersMystery player is a murderer, that has to avoid getting caught by th
   <a href="Story.md">Story</a>
 </h3>
 
+<br>
+
+<h3 align="center">
+  <a href="Camera.md">Camera</a>
+</h3>
