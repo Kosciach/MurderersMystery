@@ -8,9 +8,8 @@
 </p>
 
   <p align="center">
-    BlueVRed2 is a new version of my original BlueVRed.
-    Inspiration for this project was one of my first game made in javascript, it looked similarly to current version but lacked a lot of features.
-    Now, BlueVRed2 is a top down shooter with blue player fighting against more and more red enemies.
+    Created for GMTK GameJam 2023 - RolesReversed.<br>
+In MurderersMystery player is a murderer, that has to avoid getting caught by the police, by choosing solutions to problems.
   </p>
 
 <br>
@@ -20,11 +19,6 @@
 <br>
 
 <h3 align="center">
-  <a href="Enemies.md">Enemies</a>
+  <a href="Story.md">Story</a>
 </h3>
 
-<br>
-
-<h3 align="center">
-  <a href="Abilities.md">Abilities</a>
-</h3>
